@@ -1,0 +1,27 @@
+name: Wrong price
+description: A price on the site does not match the vendor
+labels: [wrong-price]
+body:
+  - type: input
+    id: page
+    attributes: { label: Page on tokenbarometer.com, placeholder: https://tokenbarometer.com/model/... }
+    validations: { required: true }
+  - type: input
+    id: model_host
+    attributes: { label: Model and host, placeholder: "Qwen3 235B on DeepInfra" }
+    validations: { required: true }
+  - type: input
+    id: site_shows
+    attributes: { label: What the site shows, placeholder: "$0.09 in / $0.58 out" }
+    validations: { required: true }
+  - type: input
+    id: vendor_shows
+    attributes: { label: What the vendor shows, placeholder: "$0.08 in / $0.55 out" }
+    validations: { required: true }
+  - type: input
+    id: vendor_url
+    attributes: { label: Vendor pricing page URL }
+    validations: { required: true }
+  - type: textarea
+    id: notes
+    attributes: { label: Anything else }
